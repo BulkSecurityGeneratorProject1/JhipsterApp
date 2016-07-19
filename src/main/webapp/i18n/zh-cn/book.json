@@ -2,9 +2,9 @@
     "jhipsterApp": {
         "book" : {
             "home": {
-                "title": "Books",
-                "createLabel": "Create a new Book",
-                "createOrEditLabel": "Create or edit a Book",
+                "title": "书籍",
+                "createLabel": "添加书籍",
+                "createOrEditLabel": "查看/修改",
                 "search": "Search for Book"
             },
             "created": "A new Book is created with identifier {{ param }}",
@@ -16,11 +16,11 @@
             "detail": {
                 "title": "Book"
             },
-            "title": "Title",
-            "description": "Description",
-            "publicationDate": "Publication Date",
-            "price": "Price",
-            "author": "Author"
+            "title": "标题",
+            "description": "描述",
+            "publicationDate": "发布时间",
+            "price": "价格",
+            "author": "作者"
         }
     }
 }
