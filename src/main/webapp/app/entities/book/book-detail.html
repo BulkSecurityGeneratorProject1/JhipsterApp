@@ -1,0 +1,34 @@
+
+<div>
+    <h2><span translate="jhipsterApp.book.detail.title">Book</span> {{vm.book.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span translate="jhipsterApp.book.title">Title</span></dt>
+        <dd>
+            <span>{{vm.book.title}}</span>
+        </dd>
+        <dt><span translate="jhipsterApp.book.description">Description</span></dt>
+        <dd>
+            <span>{{vm.book.description}}</span>
+        </dd>
+        <dt><span translate="jhipsterApp.book.publicationDate">Publication Date</span></dt>
+        <dd>
+            <span>{{vm.book.publicationDate | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span translate="jhipsterApp.book.price">Price</span></dt>
+        <dd>
+            <span>{{vm.book.price}}</span>
+        </dd>
+        <dt><span translate="jhipsterApp.book.author">Author</span></dt>
+        <dd>
+            <a ui-sref="author-detail({id:vm.book.author.id})">{{vm.book.author.id}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>
